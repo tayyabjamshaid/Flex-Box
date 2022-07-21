@@ -1,0 +1,148 @@
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: tomato;
+    border: 1px solid black;
+    width: 104px;
+    height: 200px;
+    margin: 10px;
+    padding: 3px;
+}
+
+#item-1{
+    align-self: flex-end;
+}
+#item-2{
+  
+}
+
+
+
+/* //Flex properties of container
+display:flex
+flex direction :row //by default row 
+flex direction :column/row-reverse  /column-reverse 
+--------------------
+agr hum chahty ha k hamari screen k choty huny pr hamari items
+b wrap hu jai(screen k mutabiq apny ap ko adjust kry tu use this)]
+flex-wrap:nowrap;   //by default nowrap 
+flex-wrap:wrap;    
+
+-------------------
+flex-flow
+combination of 2 properties  (flex-direction flex-wrap)
+flex-flow:flex-direction flex-wrap
+-----------------
+justify-content(horizontally)
+center:agr hum is ki property center kr dy tu ye hamaray items  ko horizontally center me kr dy ga
+space-between:items k drmayan space add kr du,in k starting aur end k bich space mat du\
+space-evenly:items k drmayan,starting aur end me b space add kr du,
+------------------------------
+align-items(vertically)
+*imp: is property ka use krty huay container k andr height % me ni,pixels me dni ha
+center:agr hum is ki property center kr dy tu ye hamaray items ko vertically center me kr dy ga
+flex-start:is me vertically upr a jai ga
+flex-end:is me vertically nichay a jai ga
+*/
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------
+Flex properties on item 
+1-order:
+higher the order ,later it comes
+by default,flex items ka order 0 huta ha,jesy he hum kisi item ko order dy gy,wo last py a jai ga,agr second item ko phly item sy zyada order dy gy tu wo last py chla jai ga
+#item1{
+    order:1   //it comes on 2nd last
+}
+#item2 {
+    order: 2    //it comes on last
+}
+#item3 {
+      //it comes first
+}
+
+2-flex-basis 
+=>It will implement when flex-direction:row or  flex-direction:column
+=>Agr hum kisi b item ki width ko control krna chahty ha,then use this and give flex-direction:row in parent container
+=>Agr hum kisi b item ki height ko control krna chahty ha,then use this and give flex-direction:column in parent container
+
+#item-1 {
+    flex-basis: 300px;
+}
+
+#item-2 {
+     
+}
+
+3-flex-grow:(to increase size(width) of item)
+=>let suppose,we have 3 items,agr hum 1 item ko flex grow ki property dty ha,tu us ka size dosary items ki muqably zyada bara hu ga
+=>jis item ka flex-grow number jitna zyada hu ga,wo utna zyada size(width) ly ga
+=>negative numbers is invalid in flex-grow 
+case1:
+#item1 {
+    flex-grow: 1 //it size greater than others
+}
+
+#item2 {
+ 
+}
+
+#item3 {
+   
+}
+
+case2:
+ #item1 {
+    flex-grow: 1 
+}
+
+#item2 {
+    flex-grow-3;  //is ka size(width) first item k size sy b zyada hu ga
+}
+
+#item3 {}
+
+4-flex-shrink:(to decrease size(width) of item)
+=>let suppose,we have 3 items,agr hum 1 item ko flex shrink ki property dty ha,tu screen ko chota krny pr us ka size dosary items ki muqably me chota hu ga
+ =>jis item ka flex-shrink number jitna zyada hu ga,wo utni kam size(width) ly ga 
+case1: 
+#item1 {
+    flex-shrink: 1 //it size lesser than others
+}
+
+#item2 {}
+
+#item3 {}
+
+case2: 
+#item1 {
+    flex-shrink: 1
+}
+
+#item2 {
+    flex-shrink-3; //is ka size(width) first item k size sy kam hu ga
+}
+
+#item3 {}
+
+5-align-self
+Agr kisi b specific item ko align krna chahty ha,then use this
+center: make it in center
+flex-start:Jaha sy flex container start hu rha ha,waha chla jai ga
+flex-end:Jaha sy flex container end hu rha ha,waha chla jai ga
+
+
+
+
+
+
+
+
+
+*/
